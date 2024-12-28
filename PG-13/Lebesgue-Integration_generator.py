@@ -114,3 +114,6 @@ generator = LebesgueIntegrationGenerator()
 def generate_practice_set(num_problems: int = 3) -> List[Tuple[str, str]]:
     """Generate a set of practice problems with solutions."""
     return [generator.generate_problem() for _ in range(num_problems)]
+
+
+generate_practice_set(3)

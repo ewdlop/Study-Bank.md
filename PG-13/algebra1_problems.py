@@ -1,6 +1,9 @@
 import random
 from sympy import symbols, Eq, solve
 
+def guess_purpose():
+    print("Can you guess the purpose of the functions in this file?")
+
 def generate_linear_equation():
     # Generate random coefficients for the linear equation
     x = symbols('x')
@@ -78,3 +81,5 @@ print("Algebra 1 Question:")
 print(question)
 print("Answer:")
 print(answer)
+
+guess_purpose()

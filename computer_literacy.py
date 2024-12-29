@@ -1,3 +1,6 @@
+def guess_purpose():
+    print("Can you guess the purpose of the functions in this file?")
+
 def add_binary(bin1, bin2):
     # Convert binary strings to integers, add them, and convert back to binary
     result = bin(int(bin1, 2) + int(bin2, 2))
@@ -62,3 +65,5 @@ print(f"Hexadecimal {hex1} to binary: {hex_to_bin(hex1)}")
 print(f"Bitwise AND of {bin1} and {bin2}: {bitwise_and(bin1, bin2)}")
 print(f"Bitwise OR of {bin1} and {bin2}: {bitwise_or(bin1, bin2)}")
 print(f"Bitwise XOR of {bin1} and {bin2}: {bitwise_xor(bin1, bin2)}")
+
+guess_purpose()

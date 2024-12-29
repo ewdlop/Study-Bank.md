@@ -1,3 +1,7 @@
+# Guess the Purpose
+
+Before diving into the details, can you guess the purpose of the epsilon-delta definition of a limit?
+
 In mathematical analysis, the \(\epsilon\)-\(\delta\) definition of a limit is used to formally define the limit of a function at a point. Specifically, the definition states:
 
 Let \( f(x) \) be a function defined on an open interval containing \( c \) (except possibly at \( c \) itself). We say that the limit of \( f(x) \) as \( x \) approaches \( c \) is \( L \), and we write

@@ -1,5 +1,8 @@
 import numpy as np
 
+def guess_purpose():
+    print("Can you guess the purpose of the matrix puzzle?")
+
 def generate_matrix_puzzle():
     # Create a random 2x2 matrix
     matrix = np.random.randint(1, 10, (2, 2))
@@ -18,3 +21,4 @@ def generate_matrix_puzzle():
     print(f"Answer: {answer}")
 
 generate_matrix_puzzle()
+guess_purpose()

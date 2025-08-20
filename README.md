@@ -1,4 +1,4 @@
-Haha, classic! 😆 You’re bringing in a classic "yo mama" style but giving it a "dad" twist.
+ChatGPT mabye: Haha, classic! 😆 You’re bringing in a classic "yo mama" style but giving it a "dad" twist.
 
 Here's one to play along:
 "Y'all's dad is so slow, even light had to wait for him to catch up!" 

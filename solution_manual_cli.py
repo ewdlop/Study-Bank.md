@@ -8,7 +8,6 @@ import argparse
 import sys
 import json
 import getpass
-from pathlib import Path
 from encrypted_solution_manager import EncryptedSolutionManager, create_sample_solution_manual
 
 

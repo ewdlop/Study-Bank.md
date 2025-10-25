@@ -6,11 +6,9 @@ Uses Fernet symmetric encryption from the cryptography library.
 
 import json
 import base64
-import hashlib
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from pathlib import Path
 
 
 class EncryptedSolutionManager:
@@ -29,7 +27,7 @@ class EncryptedSolutionManager:
     
     def _derive_key(self, password: str) -> bytes:
         """
-        Derive a encryption key from a password using PBKDF2.
+        Derive an encryption key from a password using PBKDF2.
         
         Args:
             password: The password to derive the key from
@@ -94,7 +92,7 @@ class EncryptedSolutionManager:
         except Exception as e:
             raise Exception(f"Decryption failed: {str(e)}. Invalid password or corrupted data.")
     
-    def save_encrypted_solution(self, solution_data: dict, password: str, filepath: str):
+    def save_encrypted_solution(self, solution_data: dict, password: str, filepath: str, verbose: bool = True):
         """
         Encrypt and save solution data to a file.
         
@@ -102,6 +100,7 @@ class EncryptedSolutionManager:
             solution_data: Dictionary containing problems and solutions
             password: Password to encrypt with
             filepath: Path to save the encrypted file
+            verbose: Whether to print success message (default: True)
         """
         encrypted_data = self.encrypt_solution(solution_data, password)
         
@@ -109,7 +108,8 @@ class EncryptedSolutionManager:
         with open(filepath, 'wb') as f:
             f.write(encrypted_data)
         
-        print(f"Encrypted solution manual saved to: {filepath}")
+        if verbose:
+            print(f"Encrypted solution manual saved to: {filepath}")
     
     def load_encrypted_solution(self, filepath: str, password: str) -> dict:
         """

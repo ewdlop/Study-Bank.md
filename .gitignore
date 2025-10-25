@@ -34,3 +34,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Encrypted solution manuals (keep passwords secure!)
+*.enc
+*.dat
+encrypted_solutions.*
